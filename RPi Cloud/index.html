@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>PiVault</title>
 
     <!--Font: Montserrat-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <!--Custom CSS-->
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -28,13 +28,11 @@
                 <span class="material-icons-outlined">menu</span>
             </div>
             <div class="header-title">
-                <h1></h1>
+                <h1>PiVault</h1>
             </div>
-            <div class="header-right">
+            <div class="search" id="search">
                 <span class="material-icons-outlined">search</span>
-                <span class="material-icons-outlined">notifications</span>
-                <span class="material-icons-outlined">email</span>
-                <span class="material-icons-outlined">account_circle</span>
+                <input class="search-input" type="search" placeholder="Search">
             </div>
         </header>
         <!--End Header-->
@@ -43,44 +41,34 @@
         <aside id="sidebar">
             <div class="sidebar-title">
                 <div class="sidebar-brand">
-                    <span class="material-icons-outlined">shopping_cart</span> STORE
+                    <span class="material-icons-outlined" id="title-icon">cloud</span>
                 </div>
                 <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
             </div>
             <ul class="sidebar-list">
                 <li class="sidebar-list-item">
-                    <a href="admin-home.php" style="color: inherit; text-decoration: none">
-                        <span class="material-icons-outlined">dashboard</span> Dashboard
+                    <a href="#" style="color: inherit; text-decoration: none">
+                        <span class="material-icons-outlined">home</span> Home
                     </a>
                 </li>
                 <li class="sidebar-list-item">
-                    <a href="aboutus-update.php" style="color: inherit; text-decoration: none">
-                        <span class="material-icons-outlined">poll</span> Edit About Us
+                    <a href="#" style="color: inherit; text-decoration: none">
+                        <span class="material-icons-outlined">history</span> Recents
                     </a>
                 </li>
                 <li class="sidebar-list-item">
-                    <a href="service-update.php" style="color: inherit; text-decoration: none">
-                        <span class="material-icons-outlined">edit_note</span> Edit Services
+                    <a href="#" style="color: inherit; text-decoration: none">
+                        <span class="material-icons-outlined">folder_delete</span> Deleted
                     </a>
                 </li>
                 <li class="sidebar-list-item">
-                    <a href="navbar-update.php" style="color: inherit; text-decoration: none">
-                        <span class="material-icons-outlined">output</span> Edit Webpage
+                    <a href="#" style="color: inherit; text-decoration: none">
+                        <span class="material-icons-outlined">folder</span> Folders
                     </a>
                 </li>
                 <li class="sidebar-list-item">
-                    <a href="admin-services.php" style="color: inherit; text-decoration: none">
-                        <span class="material-icons-outlined">output</span> Add Services    
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="contact-admin.php" style="color: inherit; text-decoration: none">
-                        <span class="material-icons-outlined">groups</span> Contacts
-                    </a>
-                </li>
-                <li class="sidebar-list-item">
-                    <a href="admin-documentation.php" style="color: inherit; text-decoration: none">
-                        <span class="material-icons-outlined">inventory_2</span> Documentation
+                    <a href="#" style="color: inherit; text-decoration: none">
+                        <span class="material-icons-outlined">star</span> Starred
                     </a>
                 </li>
                 <li class="sidebar-list-item">
@@ -153,7 +141,7 @@
     <!--Scripts-->
 
     <!--Custom JS-->
-    <script src="/js/sidebar.js"></script>
+    <script src="js/sidebar.js"></script>
 </body>
 
 </html>

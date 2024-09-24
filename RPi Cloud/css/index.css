@@ -37,6 +37,27 @@ body {
     text-align: center;
 }
 
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 100px;
+    background: #f6f6f6;
+}
+
+.search-input {
+    font-size: 16px;
+    color: #333333;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.search-input::placeholder {
+    color: #9e9ea4
+}
+
 .menu-icon {
     display: none;
 }
@@ -61,7 +82,7 @@ body {
 
 .sidebar-title {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 30px 30px 30px 30px;
     margin-bottom: 30px;
@@ -73,8 +94,10 @@ body {
 
 .sidebar-brand {
     margin-top: 15px;
-    font-size: 20px;
-    font-weight: 700;
+}
+
+#title-icon {
+    font-size: 75px; /* The cloud is unproportional to the 'x' in the hidden sidebar */
 }
 
 .sidebar-list {
@@ -173,8 +196,73 @@ body {
 .chart-title {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
+
+/*---------Login.html------------*/
+.login-page-container {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+}
+
+.login-container {
+    padding: 50px;
+    box-sizing: border-box;
+    border: 2px solid black
+}
+
+.login-container > h1  {
+    font-size: 50px;
+
+}
+
+.username-password-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.username-password {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding: 14px;
+    border-radius: 100px;
+    background: #f6f6f6;
+}
+
+.input {
+    font-size: 16px;
+    color: #333333;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.button-forgot {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.button-forgot > button {
+    font-size: 16px;
+    color: #333333;
+    border: none;
+    border-radius: 100px;
+    padding: 14px 25px 14px 25px;
+}
+
+#button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
 
 /*---------MEDIA QUERIES---------*/
 
