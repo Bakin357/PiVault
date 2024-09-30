@@ -6,6 +6,11 @@ Cloud system on Raspberry Pi
     - File download
     - Viewing stored files
     - Viewing the amount of storage
+    - Progress bar for writing files on the drive
+
+
+    - Add a temperature graph to view the temp over time
+    - 
 
 
     Notes:
