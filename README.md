@@ -19,4 +19,14 @@ Cloud system on Raspberry Pi
 
 
     Notes:
-    - Start the project from the perspective of the user. i. e. start with the login page, then the home page, then go from there.
+    - Make a list of the icons used in order to download them later and put them in 
+    the assets folder.
+
+    To-Do List
+    - Javascript is shrinking the sidebar when the display is shrunken
+    - The exit icon needs to be at the top right hand of the sidebar
+    - The upload button is a bit bland
+    - The style of the login page needs to be changed
+    - style.css needs to be split into different css files and cleaned up
+    - Set up wireguard for windows, ubuntu, and Raspi
+    

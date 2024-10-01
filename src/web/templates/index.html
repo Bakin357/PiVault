@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
     <!--Custom CSS-->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
 <body>
@@ -27,28 +27,33 @@
             <div class="menu-icon" onclick="openSidebar()">
                 <span class="material-icons-outlined">menu</span>
             </div>
-            <div class="header-title">
-                <h1>PiVault</h1>
-            </div>
-            <div class="logout-button">
-                <a href="login.html" style="color: inherit; text-decoration: none">  <!-- adjust logout button next to the search bar -->
-                <span class="material-icons-outlined">logout</span>
-                </a>
+            <div class="quick-upload">
+                <button class="quick-upload-button">
+                    <span class="material-icons-outlined">cloud_upload</span> Quick Upload
+                </button>
             </div>
             <div class="search" id="search">
                 <span class="material-icons-outlined">search</span>
                 <input class="search-input" type="search" placeholder="Search">
+            </div>
+            <div class="logout-button">
+                <a href="login.html" style="color: inherit; text-decoration: none">
+                    <span class="material-icons-outlined">logout</span>
+                </a>
             </div>
         </header>
         <!--End Header-->
 
         <!--Sidebar-->
         <aside id="sidebar">
-            <div class="sidebar-title">
-                <div class="sidebar-brand">
-                    <span class="material-icons-outlined" id="title-icon">cloud</span>
-                </div>
+            <div class="exit-icon">
                 <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+            <div class="sidebar-title">
+                <div class="header-title">
+                    <!-- <span class="material-icons-outlined">cloud</span> -->
+                    <h1>PiVault</h1>
+                </div>
             </div>
             <ul class="sidebar-list">
                 <li class="sidebar-list-item">
@@ -58,22 +63,22 @@
                 </li>
                 <li class="sidebar-list-item">
                     <a href="#" style="color: inherit; text-decoration: none">
-                        <span class="material-icons-outlined">history</span> Recents
+                        <span class="material-icons-outlined">folder</span> My Files
                     </a>
                 </li>
                 <li class="sidebar-list-item">
                     <a href="#" style="color: inherit; text-decoration: none">
-                        <span class="material-icons-outlined">folder_delete</span> Deleted
+                        <span class="material-icons-outlined">history</span> Recent Uploads
                     </a>
                 </li>
                 <li class="sidebar-list-item">
                     <a href="#" style="color: inherit; text-decoration: none">
-                        <span class="material-icons-outlined">folder</span> Folders
+                        <span class="material-icons-outlined">grade</span> Starred
                     </a>
                 </li>
                 <li class="sidebar-list-item">
                     <a href="#" style="color: inherit; text-decoration: none">
-                        <span class="material-icons-outlined">star</span> Starred
+                        <span class="material-icons-outlined">folder_delete</span> Recently Deleted
                     </a>
                 </li>
                 <li class="sidebar-list-item">
@@ -93,8 +98,8 @@
 
                 <div class="card">
                     <div class="card-inner">
-                        <h3>PRODUCTS</h3>
-                        <span class="material-icons-outlined">inventory</span>
+                        <h3>STORAGE</h3>
+                        <span class="material-icons-outlined">memory</span>
                     </div>
                     <h1>0</h1>
                 </div>
@@ -102,14 +107,14 @@
                 <div class="card">
                     <div class="card-inner">
                         <h3>CATEGORIES</h3>
-                        <span class="material-icons-outlined">category</span>
+                        <span class="material-icons-outlined">cloud</span>
                     </div>
                     <h1>0</h1>
                 </div>
 
                 <div class="card">
                     <div class="card-inner">
-                        <h3>SUBSCRIPTIONS</h3>
+                        <h3>USERS</h3>
                         <span class="material-icons-outlined">groups</span>
                     </div>
                     <h1>0</h1>
@@ -128,12 +133,12 @@
             <div class="charts">
 
                 <div class="charts-card">
-                    <h2 class="chart-title">Top 5 Products</h2>
+                    <h2 class="chart-title">Raspberry Pi CPU Temperature</h2>
                     <div id="bar-chart"></div>
                 </div>
 
                 <div class="charts-card">
-                    <h2 class="chart-title">Purchase and Sales Orders</h2>
+                    <h2 class="chart-title">SSH Login History</h2>
                     <div id="area-chart"></div>
                 </div>
 
@@ -146,7 +151,7 @@
     <!--Scripts-->
 
     <!--Custom JS-->
-    <script src="js/sidebar.js"></script>
+    <script src="../static/js/app.js"></script>
 </body>
 
 </html>
