@@ -261,6 +261,8 @@ body {
     padding: 20px 0 20px 0;
     font-size: 75px;
     justify-content: center;
+    margin: auto;
+
 }
 
 .login-container > h1  {
