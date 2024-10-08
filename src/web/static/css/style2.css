@@ -1,0 +1,86 @@
+:root {
+    --primary-color: #1d2634;  /* Dark blue-gray */
+    --secondary-color: #181c50;
+    --font-size: 16px;
+    --font-color: #9e9ea4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    /* background-image: url("../images/login-background6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(50px); */
+    background-color: aqua;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 260px 1fr 1fr 1fr;
+    grid-template-rows: 70px 3fr;
+    grid-template-areas: 
+        "sidebar header header header"
+        "sidebar main main main";
+}
+
+/*----------Header----------*/
+.header {
+    grid-area: header;
+    grid-area: 70px;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.quick-upload {
+    display: flex;
+    margin-right: auto;
+    background: #f6f6f6;
+    border-radius: 100px;
+    position: relative;
+}
+
+.quick-upload button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: var(--font-size);
+    padding: 14px;
+    color: var(--font-color);
+}
+
+.quick-upload span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 14px;
+}
+
+.quick-upload button:hover {
+    cursor: pointer;
+    color: #61615b;
+    background-color: #9e9e9e;
+    border-radius: 100px;
+}
+
+
+
+/*----------Sidebar----------*/
+.sidebar  {
+    grid-area: sidebar;
+    background-color: darkblue;
+    box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);    
+}
