@@ -32,9 +32,9 @@
                     <span class="material-icons-outlined">cloud_upload</span> Quick Upload
                 </button>
             </div>
-            <div class="search" id="search">
+            <div class="search">
                 <span class="material-icons-outlined">search</span>
-                <input class="search-input" type="search" placeholder="Search">
+                <input type="search" placeholder="Search">
             </div>
             <div class="logout-button">
                 <a href="login.html" style="color: inherit; text-decoration: none">
@@ -46,13 +46,13 @@
 
         <!--Sidebar-->
         <aside class="sidebar">
-            <div class="exit-icon">
-                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
-            </div>
             <div class="sidebar-title">
                 <div class="header-title">
                     <!-- <span class="material-icons-outlined">cloud</span> -->
                     <h1>PiVault</h1>
+                </div>
+                <div class="exit-icon">
+                    <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
                 </div>
             </div>
             <ul class="sidebar-list">
@@ -82,7 +82,9 @@
                     </a>
                 </li>
                 <li class="sidebar-list-item">
-                    <span class="material-icons-outlined">settings</span> Settings
+                    <a href="#" style="color: inherit; text-decoration: none">
+                        <span class="material-icons-outlined">settings</span> Settings
+                    </a>
                 </li>
             </ul>
         </aside>
