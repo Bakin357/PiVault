@@ -22,28 +22,36 @@
 
 <body>
     <div class="wrapper">
-        <form action="" method="post">
+        <form action="index.html">
             <h1>Nexus Login</h1>
+
+            <!-- Username Input Box -->
             <div class="input-box">
                 <input type="text" placeholder="Username" required>
                 <span class="material-icons-outlined">person</span>
             </div>
+
+            <!-- Password Input Box -->
             <div class="input-box">
                 <input type="password" placeholder="Password" required>
                 <span class="material-icons-outlined">lock</span>
             </div>
 
+            <!-- Remember Me and Forgot Password -->
             <div class="remember-forgot">
-                <label><input type="checkbox"> Remember me</label>
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
                 <a href="#">Forgot password?</a>
             </div>
 
+            <!-- Submit Button -->
             <button type="submit" class="btn">Login</button>
 
+            <!-- Register Link -->
             <div class="register-link">
-                <p>Don't have an account? <a href="index.html">Request Here!</a></p>
+                <p>Don't have an account? <a href="#">Request Here!</a></p>
             </div>
-
         </form>
     </div>
 </body>
